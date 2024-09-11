@@ -1,26 +1,101 @@
+<!DOCTYPE html>
+
 <head>
     <title>Contact</title>
-    <link rel="stylesheet" href="./assets/twind.css" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/global.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
 </head>
 
-<body>
-    <div class="flex w-full items-center justify-center gap-2">
-        <a href="" class="text-gray-600">Accueil</a>
-        <a href="" class="text-gray-600">A propos</a>
-        <a href="" class="text-gray-600">Unicop </a>
-        <a href="" class="text-gray-600">Nos membres </a>
-        <a href="" class="text-gray-600">veille & actualités </a>
-        <a href="" class="text-gray-600">Espace média</a>
+<body class="min-h-screen flex flex-col">
+    <div class="flex w-full items-center justify-center gap-3 text-gray-600  ">
+        <a href="">Accueil</a>
+        <a href="">A propos</a>
+        <a href="">Unicop </a>
+        <a href="">Nos membres </a>
+        <a href="">veille & actualités </a>
+        <a href="">Espace média</a>
     </div>
-    <img src="./assets/img/poisson.jpg" class="w-full h-44 object-cover object-top" alt="poisson">
-    <a href="">Home</a>
-    <a href="">contact</a></img>
-    <input type="number" id="num" name="num" />
-    <div class="flex">
-        <div class="w-10 h-10 bg-blue-700"></div>
-        <div class="flex flex-col">
-            <label for="num">vous avez une question?</label>
-            <a href="tel:0123456789" class="hover:underline">0123456789</a>
+    <div class="relative">
+        <img src="./assets/img/poisson.jpg" class="w-full h-44 object-cover object-top" alt="poisson" />
+        <div class="absolute flex flex-col w-full h-44 top-0 text-center items-center justify-center text-white">
+            <a href="">Home > Contact</a>
+            <h1 class="text-2xl font-bold font-mono">Contact</h1>
+        </div>
+    </div>
+    <div class="max-w-1/2 mx-auto">
+        <h2 class="font-bold">Contactez-nous</h2>
+        <div class="flex-1 mt-4">
+            <div class="flex max-md:flex-col items-center justify-center gap-4">
+                <div>
+                    <div class="flex gap-4">
+                        <div class="w-10 h-10 bg-blue-700">
+                            <img src="./assets/img/phone-svgrepo-com (1).svg" class="w-9 h-9 m-auto text-white" />
+                        </div>
+                        <div class="flex flex-col">
+                            <label for="num">vous avez une question?</label>
+                            <a href="tel:0123456789" class="hover:underline font-bold text-blue-700 ">0123456789</a>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="w-10 h-10 bg-blue-700">
+                            <img src="./assets/img/mail.svg" class="w-10 h-10 text-white bg-blue-800" />
+                        </div>
+                        <div class="flex flex-col">
+                            <label for="email">Ecrivez-nous</label>
+                            <a href="administration@unicopmaroc.com"
+                                class="hover:underline font-bold text-blue-700">administration@unicopmaroc.com</a>
+                        </div>
+                    </div>
+                    <div class="flex gap-2">
+                        <div class="w-10 h-10 bg-blue-700 text-white">
+                            <img src="./assets/img/home.svg" class="w-10 h-10 text-white " />
+                        </div>
+                        <div class="flex flex-col">
+                            <label for="ad" class="font-thin">Rendez-vous visite</label>
+                            <a href="adresse" class="hover:underline font-bold text-blue-700">3,rue de Bir
+                                Hakeim,1°ét.Oasis<br>
+                                20150 Casa-Maroc</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <div class="flex gap-2">
+                        <input placeholder="Nom complet" class="bg-gray-100 p-2 focus:outline-0" />
+                        <input placeholder="Telephone" class="bg-gray-100 p-2 focus:outline-0" />
+                        <input placeholder="Adresse e-mail" class="bg-gray-100 p-2 focus:outline-0" />
+                    </div>
+                    <textarea rows="3" cols="80" placeholder="commentaires"
+                        class="bg-gray-100 p-2 focus:outline-0"> </textarea>
+                    <button type="submit"
+                        class="flex justify-center bg-blue-100 w-fit py-4 px-16 bg-blue-700 text-white">Envoyer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex justify-center gap-2 w-full h-fit py-10 bg-blue-700 mt-10">
+        <div class="flex flex-col max-w-sm text-[13px]">
+            <div class=" w-10 h-10 bg-white"></div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium illum voluptatibus.
+        </div>
+        <div class="flex flex-col gap-2 text-white">
+            <h3>Adresse</h3>
+            <div class="flex flex-col">
+                66 Road Broklyn Golden Street. 600
+                New. York
+            </div>
+            <h3>Contact</h3>
+            <div class="flex flex-col">
+                needhelp@company.com<br>
+                telephone..........
+            </div>
+        </div>
+        <div class="flex flex-col text-white">
+            <h3>Explore</h3>
+            Job & employement About Us
         </div>
     </div>
 </body>
